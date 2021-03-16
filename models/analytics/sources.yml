@@ -12,7 +12,7 @@ sources:
           - name: country_id
             description: Column 1 - renamed
           - name: country
-            description: Column 2
+            description: Column 2 - renamed thrice
           - name: last_update
             description: |-
               Column 3 - using" special$$&!*(&!@(*&#$)%asdf characters
