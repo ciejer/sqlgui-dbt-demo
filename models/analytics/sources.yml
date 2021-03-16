@@ -10,9 +10,9 @@ sources:
       - name: country
         columns:
           - name: country_id
-            description: Column 1 - renamed
+            description: Column 1 - renamed again
           - name: country
-            description: Column 2
+            description: Column 2 - renamed four times
           - name: last_update
             description: |-
               Column 3 - using" special$$&!*(&!@(*&#$)%asdf characters
