@@ -1,0 +1,7 @@
+version: 2
+models:
+  - name: film_category_name
+    description: asdf
+    columns:
+      - name: title
+        description: adsofiadsf
