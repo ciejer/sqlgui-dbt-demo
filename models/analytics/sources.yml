@@ -10,9 +10,9 @@ sources:
       - name: country
         columns:
           - name: country_id
-            description: Column 1 - renamed
+            description: Column 1 - renamed 3 times
           - name: country
-            description: Column 2
+            description: Column 2 - renamed five times
           - name: last_update
             description: |-
               Column 3 - using" special$$&!*(&!@(*&#$)%asdf characters
@@ -22,9 +22,8 @@ sources:
 
               and more newlines
 
-
               and powershell injections; Write-Host "it escaped!"
-        description: Description works!
+        description: Description works; powershell injection does not
       - name: customer
       - name: film
         columns:
