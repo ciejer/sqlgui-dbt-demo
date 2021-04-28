@@ -12,20 +12,25 @@ sources:
           - name: country_id
             description: Column 1 - renamed
           - name: country
-            description: Column 2
+            description: name 2
           - name: last_update
             description: |-
               Column 3 - using" special$$&!*(&!@(*&#$)%asdf characters
+
+
+
 
               and newlines
 
 
               and more newlines
 
-
               and powershell injections; Write-Host "it escaped!"
-        description: Description works!
+        description: New description
       - name: customer
+        tags:
+          - SourceTag
+          - ShouldFail
       - name: film
         columns:
           - name: film_id
