@@ -43,6 +43,8 @@ sources:
       - name: film_category
       - name: inventory
       - name: language
+        tags:
+          - langtag
       - name: payment
       - name: rental
       - name: staff

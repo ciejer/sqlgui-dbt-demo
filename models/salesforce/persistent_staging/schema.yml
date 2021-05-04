@@ -1,0 +1,6 @@
+version: 2
+models:
+  - name: campaign_member
+    description: >-
+      This model does not yet have a description. In future releases, this will
+      be editable here.
