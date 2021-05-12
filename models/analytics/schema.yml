@@ -15,7 +15,7 @@ models:
   - name: customer_address
     columns:
       - name: first_name
-        description: First name of the customer
+        description: First name of the customer.
       - name: last_name
         description: ''
     description: >-
