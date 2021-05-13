@@ -18,6 +18,8 @@ models:
         description: First name of the customer.
       - name: last_name
         description: ''
+      - name: last_name123
+        description: Last name
     description: >-
       This model does not yet have a description. In future releases, this will
       be editable here.
