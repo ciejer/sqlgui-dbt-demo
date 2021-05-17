@@ -15,7 +15,11 @@ models:
       - name: first_name
         description: First name of the customer.
       - name: last_name
-        description: ''
+        description: |-
+          The customer's last name. 
+
+
+          **sometimes not provided**
       - name: last_name123
         description: Last name
     description: ''
