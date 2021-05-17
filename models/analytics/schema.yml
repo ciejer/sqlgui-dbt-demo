@@ -1,14 +1,18 @@
 version: 2
 models:
   - name: film_category_name
-    description: asdf
+    description: "Film Category Name - rolled up from master category list\_\_"
     columns:
       - name: title
-        description: adsofiaasdfdsf
+        description: Film Category Title
+      - name: description
+        description: Film Category Description
+      - name: film_id
+        description: ID to Film table
   - name: customer_categories
     columns:
       - name: customer_name
-        description: ''
+        description: Customer Name (concat of First Name and Last Name)
       - name: rental_count
         description: >-
           Total number of times a customer has rented from us. Not to be
