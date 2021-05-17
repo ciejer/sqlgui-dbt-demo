@@ -32,3 +32,4 @@ models:
           - ShouldFail
       tags:
         - dvds
+        - customer

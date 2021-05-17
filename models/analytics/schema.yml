@@ -15,13 +15,13 @@ models:
           mistaken for total number of DVDs rented.
       - name: category_name
         description: ''
-    description: Categories of customer
+    description: Customer Categories final model
   - name: customer_address
     columns:
       - name: first_name
         description: First name of the customer.
       - name: last_name
-        description: ''
+        description: Last name of the customer.
       - name: last_name123
         description: Last name
-    description: ''
+    description: Customer Address intermediate model
