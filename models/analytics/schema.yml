@@ -9,15 +9,19 @@ models:
     columns:
       - name: customer_name
         description: ''
-    description: >-
-      This model does not yet have a description. In future releases, this will
-      be editable here.
+      - name: rental_count
+        description: >-
+          Total number of times a customer has rented from us. Not to be
+          mistaken for total number of DVDs rented.
+      - name: category_name
+        description: ''
+    description: Categories of customer
   - name: customer_address
     columns:
       - name: first_name
-        description: First name of the customer
+        description: First name of the customer.
       - name: last_name
         description: ''
-    description: >-
-      This model does not yet have a description. In future releases, this will
-      be editable here.
+      - name: last_name123
+        description: Last name
+    description: ''

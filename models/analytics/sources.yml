@@ -5,6 +5,9 @@ sources:
     tables:
       - name: actor
       - name: address
+        tags:
+          - ''
+        description: ''
       - name: category
       - name: city
       - name: country
@@ -27,10 +30,13 @@ sources:
 
               and powershell injections; Write-Host "it escaped!"
         description: New description
+        tags:
+          - ''
       - name: customer
         tags:
           - SourceTag
           - ShouldFail
+        description: ''
       - name: film
         columns:
           - name: film_id

@@ -30,3 +30,5 @@ models:
         tags:
           - SourceTag
           - ShouldFail
+      tags:
+        - dvds
