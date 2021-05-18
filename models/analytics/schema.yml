@@ -9,6 +9,8 @@ models:
         description: Film Category Description
       - name: film_id
         description: ID to Film table
+      - name: category_name
+        description: ''
   - name: customer_categories
     columns:
       - name: customer_name
