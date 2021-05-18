@@ -37,6 +37,11 @@ sources:
           - SourceTag
           - ShouldFail
         description: ''
+        columns:
+          - name: customer_id
+            description: |+
+              key customer id
+
       - name: film
         columns:
           - name: film_id

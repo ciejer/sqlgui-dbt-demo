@@ -28,4 +28,6 @@ models:
         description: Last name of the customer.
       - name: last_name123
         description: Last name
+      - name: customer_id
+        description: ID of the customer
     description: Customer Address intermediate model
