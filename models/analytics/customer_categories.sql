@@ -1,8 +1,8 @@
 SELECT
+    film_category_name.category_name,
     customer_address.first_name || ' '
     || customer_address.last_name AS customer_name,
-    film_category_name.category_name,
-    count(1) AS rental_count
+    count(*) AS rental_count
 FROM {{ source('public','rental') }} AS rental
 LEFT JOIN {{ ref('customer_address') }} AS customer_address
     ON customer_address.customer_id = rental.customer_id
