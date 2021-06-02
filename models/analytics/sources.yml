@@ -64,6 +64,7 @@ sources:
     tags:
     - langtag
   - name: payment
+    description: Payment Details
   - name: rental
   - name: staff
   - name: store

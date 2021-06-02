@@ -40,3 +40,5 @@ models:
   - name: address
     description: Address of the customer.
   description: Customer Address intermediate model
+- name: customer_film_categories
+  description: Film Category Description by Customer Name
