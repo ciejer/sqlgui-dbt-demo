@@ -38,3 +38,8 @@ models:
         - dvds
         - customer
         - cat
+      customer_address:
+        tags:
+        - dvds
+        - customer
+        - film
