@@ -50,10 +50,4 @@ models:
   description: Film Category Description by Customer Name
   columns:
   - name: description
-    tests:
-    - not_null
   - name: customer_name
-    tests:
-    - relationships:
-        to: ref('customer_categories')
-        field: customer_name
