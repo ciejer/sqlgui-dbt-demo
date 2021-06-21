@@ -3,43 +3,48 @@ version: 1.0.0
 config-version: 2
 profile: pg
 source-paths:
-- models
+  - models
 analysis-paths:
-- analysis
+  - analysis
 test-paths:
-- tests
+  - tests
 data-paths:
-- data
+  - data
 macro-paths:
-- macros
+  - macros
 snapshot-paths:
-- snapshots
+  - snapshots
 target-path: target
 clean-targets:
-- target
-- dbt_modules
+  - target
+  - dbt_modules
 models:
   my_new_project:
     analytics:
       materialized: view
       film_category_name:
         +tags:
-        - test1
-        - test2
+          - test1
+          - test2
       sources:
         tags:
-        - SourceTag
-        - ShouldFail
+          - SourceTag
+          - ShouldFail
       tags:
-      - dvds
-      - customer
+        - dvds
+        - customer
       customer_categories:
         tags:
-        - dvds
-        - customer
-        - cat
+          - dvds
+          - customer
+          - cat
       customer_address:
         tags:
-        - dvds
-        - customer
-        - film
+          - dvds
+          - customer
+          - film
+      customer_film_categories:
+        tags:
+          - dvds
+          - customer
+          - views
