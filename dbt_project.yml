@@ -22,29 +22,12 @@ models:
   my_new_project:
     analytics:
       materialized: view
-      film_category_name:
-        +tags:
-          - test1
-          - test2
-      sources:
-        tags:
-          - SourceTag
-          - ShouldFail
-      tags:
-        - dvds
-        - customer
       customer_categories:
         tags:
-          - dvds
-          - customer
-          - cat
+          - category
       customer_address:
         tags:
-          - dvds
-          - customer
           - film
       customer_film_categories:
         tags:
-          - dvds
-          - customer
           - views

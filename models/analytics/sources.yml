@@ -9,10 +9,12 @@ sources:
           - ''
         description: ''
       - name: category
-        description: DVD Category
+        description: DVD Category   #Category of DVD
         tags:
           - cat
-          - mouse
+        columns:
+          - name: category_id
+            description: Category ID
       - name: city
       - name: country
         columns:
@@ -42,7 +44,7 @@ sources:
           - name: title
             description: ''
           - name: release_year
-            description: the year 
+            description: the yearï¿½
       - name: film_actor
       - name: film_category
       - name: inventory
