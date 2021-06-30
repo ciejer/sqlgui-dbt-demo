@@ -1,16 +1,5 @@
 version: 2
 models:
-  - name: film_category_name
-    description: "Film Category Name - rolled up from master category list\_\_"
-    columns:
-      - name: title
-        description: Film Category Title
-      - name: description
-        description: Film Category Description
-      - name: film_id
-        description: ID to Film table
-      - name: category_name
-        description: ''
   - name: customer_categories
     columns:
       - name: customer_name
@@ -30,12 +19,26 @@ models:
               to: ref('film_category_name')
               field: category_name
     description: Customer Categories final model
+  - name: customer_film_categories
+    description: ''
+  - name: film_category_name
+    description: Film Category Name - rolled up from master category list
+    columns:
+      - name: title
+        description: Film Category Title
+      - name: description
+        description: Film Category Description
+      - name: film_id
+        description: ID to Film table
+      - name: category_name
+        description: ''
   - name: customer_address
     columns:
       - name: first_name
         description: First name of the customer.
         tests:
-          - unique
+          - unique:
+              severity: ERROR
       - name: last_name
         description: Last name of the customer.
       - name: last_name123
@@ -43,5 +46,5 @@ models:
       - name: customer_id
         description: ID of the customer
       - name: address
-        description: Address of the customer.
+        description: Address of the customer
     description: Customer Address intermediate model

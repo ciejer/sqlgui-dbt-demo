@@ -4,9 +4,11 @@ sources:
     description: The dvdrental dummy database
     tables:
       - name: actor
+        +tags:
+          - filmstats
       - name: address
-        tags:
-          - ''
+        +tags:
+          - test1
         description: ''
       - name: category
         description: DVD Category   #Category of DVD
@@ -15,7 +17,12 @@ sources:
         columns:
           - name: category_id
             description: Category ID
+            tests:
+              - not_null:
+                  severity: ERROR
       - name: city
+        +tags:
+          - customerstats
       - name: country
         columns:
           - name: country_id
@@ -46,7 +53,11 @@ sources:
           - name: release_year
             description: the year�
       - name: film_actor
+        tags:
+          - filmstats
       - name: film_category
+        tags:
+          - filmstats
       - name: inventory
       - name: language
         tags:
@@ -54,5 +65,9 @@ sources:
       - name: payment
         description: Payment Details
       - name: rental
+        +tags:
+          - customerstats
       - name: staff
+        tags:
+          - storestats
       - name: store
