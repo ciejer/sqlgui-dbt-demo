@@ -5,9 +5,6 @@ sources:
   tables:
   - name: actor
   - name: address
-    tags:
-    - ''
-    description: ''
   - name: category
     description: DVD Category
     tags:
@@ -36,8 +33,6 @@ sources:
 
         and powershell injections; Write-Host "it escaped!"'
     description: New description
-    tags:
-    - ''
   - name: customer
     tags:
     - SourceTag
