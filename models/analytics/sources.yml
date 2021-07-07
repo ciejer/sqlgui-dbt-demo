@@ -1,64 +1,56 @@
 version: 2
 sources:
-- name: public
-  description: The dvdrental dummy database
-  tables:
-  - name: actor
-  - name: address
-  - name: category
-    description: DVD Category
-    tags:
-    - cat
-    - mouse
-  - name: city
-  - name: country
-    columns:
-    - name: country_id
-      description: Column 1 - renamed
-    - name: country
-      description: name 2
-    - name: last_update
-      description: 'Column 3 - using" special$$&!*(&!@(*&#$)%asdf characters
+  - name: public
+    description: The dvdrental dummy database
+    tables:
+      - name: actor
+        columns:
+          - name: actor_id
+            description: ''
+      - name: address
+      - name: category
+        description: DVD Category
+        tags:
+          - cat
+          - mouse
+      - name: city
+      - name: country
+        columns:
+          - name: country_id
+            description: Column 1 - renamed
+          - name: country
+            description: name 2
+          - name: last_update
+            description: 'Column 3 - using" special$$&!*(&!@(*&#$)%asdf characters
+              and newlines and more newlines and powershell injections; Write-Host
+              "it escaped!"'
+        description: New description
+      - name: customer
+        tags:
+          - SourceTag
+          - ShouldFail
+        description: ''
+        columns:
+          - name: customer_id
+            description: 'key customer id
 
 
-
-
-
-        and newlines
-
-
-
-        and more newlines
-
-
-        and powershell injections; Write-Host "it escaped!"'
-    description: New description
-  - name: customer
-    tags:
-    - SourceTag
-    - ShouldFail
-    description: ''
-    columns:
-    - name: customer_id
-      description: 'key customer id
-
-
-        '
-  - name: film
-    columns:
-    - name: film_id
-      description: ''
-    - name: title
-      description: ''
-    - name: release_year
-      description: "the year\_"
-  - name: film_actor
-  - name: film_category
-  - name: inventory
-  - name: language
-    tags:
-    - langtag
-  - name: payment
-  - name: rental
-  - name: staff
-  - name: store
+              '
+      - name: film
+        columns:
+          - name: film_id
+            description: ''
+          - name: title
+            description: ''
+          - name: release_year
+            description: "the year "
+      - name: film_actor
+      - name: film_category
+      - name: inventory
+      - name: language
+        tags:
+          - langtag
+      - name: payment
+      - name: rental
+      - name: staff
+      - name: store
