@@ -32,10 +32,7 @@ sources:
         description: ''
         columns:
           - name: customer_id
-            description: 'key customer id
-
-
-              '
+            description: 'key customer id'
       - name: film
         columns:
           - name: film_id
@@ -43,7 +40,10 @@ sources:
           - name: title
             description: ''
           - name: release_year
-            description: "the year "
+            description: "the year"
+        description: ''
+        tags:
+          - films
       - name: film_actor
       - name: film_category
       - name: inventory
